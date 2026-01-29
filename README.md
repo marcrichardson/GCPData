@@ -4,7 +4,7 @@ A repo to test building some GCP Data tools using terraform
 
 Things this creates:
 
-BigQuery dataset
+BigQuery dataset and table
 Dataflow job
 Dataproc job
 Bigtable instance
