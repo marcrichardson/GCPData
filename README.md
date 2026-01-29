@@ -10,7 +10,7 @@ BigQuery dataset and table
 Dataflow job
 Dataproc job
 Bigtable instance
-Cloud storate bucket
+Cloud storage bucket
 Cloud Function
 Cloud Spanner instance
 Firestore instance
