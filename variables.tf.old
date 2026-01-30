@@ -1,0 +1,18 @@
+variable "project_id" {
+  default = "actions-lab-3fa52"
+}
+variable "region" {
+  default = "us-central1"
+}
+variable "bucket_name" {
+  default = "marc-richardson-bucket"
+}
+variable "name" {
+  default = "marc-richardson-data"
+}
+variable "zone" {
+  default = "us-east-2"
+}
+variable "nodes" {
+}
+variable "dataset_id" {}
