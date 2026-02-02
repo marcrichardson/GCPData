@@ -10,13 +10,13 @@ variable "project_id" {
 variable "region" {
   description = "GCP region"
   type        = string
-  default     = "us-central1"
+  default     = "us-west1"
 }
 
 variable "zone" {
   description = "GCP zone"
   type        = string
-  default     = "us-central1-a"
+  default     = "us-west1-a"
 }
 
 ############################
@@ -35,7 +35,7 @@ variable "bucket_name" {
 variable "bq_dataset_id" {
   description = "BigQuery dataset ID"
   type        = string
-  default     = "analytics"
+  default     = "bqdataset"
 }
 
 ############################
@@ -45,13 +45,13 @@ variable "bq_dataset_id" {
 variable "pubsub_topic_name" {
   description = "Pub/Sub topic name"
   type        = string
-  default     = "events-topic"
+  default     = "pubsub-topic"
 }
 
 variable "pubsub_subscription_name" {
   description = "Pub/Sub subscription name"
   type        = string
-  default     = "events-subscription"
+  default     = "pubsub-subscription"
 }
 
 ############################
@@ -61,19 +61,19 @@ variable "pubsub_subscription_name" {
 variable "dataproc_cluster_name" {
   description = "Dataproc cluster name"
   type        = string
-  default     = "dataproc-cluster"
+  default     = "first-dataproc-cluster"
 }
 
 variable "dataproc_master_machine_type" {
   description = "Dataproc master machine type"
   type        = string
-  default     = "e2-standard-2"
+  default     = "e2-micro-2"
 }
 
 variable "dataproc_worker_machine_type" {
   description = "Dataproc worker machine type"
   type        = string
-  default     = "e2-standard-2"
+  default     = "e2-micro-2"
 }
 
 variable "dataproc_worker_count" {
@@ -89,7 +89,7 @@ variable "dataproc_worker_count" {
 variable "dataflow_job_name" {
   description = "Dataflow job name"
   type        = string
-  default     = "example-dataflow-job"
+  default     = "first-dataflow-job"
 }
 
 variable "dataflow_template_path" {
@@ -121,7 +121,7 @@ variable "bigtable_num_nodes" {
 variable "cloudsql_instance_name" {
   description = "Cloud SQL instance name"
   type        = string
-  default     = "postgres-instance"
+  default     = "postgres-instance-1"
 }
 
 variable "cloudsql_tier" {
@@ -137,7 +137,7 @@ variable "cloudsql_tier" {
 variable "spanner_instance_name" {
   description = "Spanner instance name"
   type        = string
-  default     = "spanner-instance"
+  default     = "first-spanner-instance"
 }
 
 variable "spanner_nodes" {
@@ -175,7 +175,7 @@ variable "cloud_function_entry_point" {
 variable "redis_instance_name" {
   description = "Redis instance name"
   type        = string
-  default     = "redis-instance"
+  default     = "first-redis-instance"
 }
 
 variable "redis_memory_size_gb" {
@@ -191,6 +191,6 @@ variable "redis_memory_size_gb" {
 variable "firestore_location" {
   description = "Firestore location"
   type        = string
-  default     = "us-central1"
+  default     = "us-west1"
 }
 
